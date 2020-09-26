@@ -1,0 +1,225 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Jmwai Portfolio</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="media/img/favicon.ico">
+    {% load static %}
+    <title>{% block title %}{% endblock %}</title>
+
+	<!-- CSS here -->
+  <link rel="stylesheet" href="{% static 'john/css/all.min.css' %}" />
+  <link rel="stylesheet" href="{% static 'john/css/john.css' %}" />
+  <link rel="stylesheet" href="{% static 'john/css/templatemo-style.css' %}" />
+	<link rel="stylesheet" href="{% static 'john/css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/owl.carousel.min.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/slicknav.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/flaticon.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/animate.min.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/magnific-popup.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/fontawesome-all.min.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/themify-icons.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/slick.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/nice-select.css' %}">
+	<link rel="stylesheet" href="{% static 'john/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'john/css/resume.scss' %}">
+  <style media="screen">
+    .modal-backdrop {
+      z-index: -1;
+    }
+    .slider-height2{
+      height: 20px !important;
+    }
+  </style>
+</head>
+
+<body>
+<header>
+    <!--? Header Start -->
+    <div class="header-area header-transparent" style=" background:black;">
+            <div class="main-header  header-sticky">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <!-- Logo -->
+                        <div class="col-xl-2 col-lg-2 col-md-1">
+                            <div class="logo">
+                                <a href="{% url 'john:index' %}"><img src="media/img/logo/logo.png" alt="john"></a>
+                            </div>
+                        </div>
+                        <div class="col-xl-10 col-lg-10 col-md-10">
+                            <div class="menu-main d-flex align-items-center justify-content-end">
+                                <!-- Main-menu -->
+                                <div class="main-menu f-right d-none d-lg-block">
+                                    <nav>
+                                        <ul id="navigation">
+                                            <li><a href="{% url 'john:index' %}">Home</a></li>
+                                            <li><a href="{% url 'john:portfolio' %}">Portfolio</a></li>
+                                            <li><a href="media/img/JMwai Resume.pdf" target="_blank">Resume</a></li>
+                                            <li><a href="{% url 'john:gallery' %}">Gallery</a></li>
+                                            <!-- <li><a href="{% url 'john:about' %}">About</a></li> -->
+                                             <!-- <li> <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"><a href="{% url 'john:contact' %}">
+                                                 Contact Now</a>
+                                               </button></li> -->
+                                        </ul>
+                                    </nav>
+                                </div>
+                                <!-- <div class="header-right-btn f-right d-none d-lg-block ml-20">
+
+
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- Mobile Menu -->
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Header End -->
+</header>
+
+<!-- <div class="container"> -->
+   {% block content %}
+   {% endblock %}
+
+ <footer id="particles-background">
+     <!--? Footer Start-->
+     <div class="footer-area footer-bg" id="particles-background">
+         <div class="container" >
+             <div class="footer-top footer-padding">
+                 <div class="row d-flex justify-content-between">
+                     <div class="col-xl-4 col-lg-4 col-md-5 col-sm-8">
+                         <div class="single-footer-caption mb-50">
+                             <!-- logo -->
+                             <div class="footer-logo">
+                                 <a href="index.html"><img src="media/img/logo/logo2_footer.png" alt=""></a>
+                             </div>
+                             <div class="footer-tittle">
+                                 <div class="footer-pera">
+                                     <p class="info1">Grabbing the concsumer’s attention isn’t enough you have to keep that attention for at least a.</p>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-2 col-md-5 col-sm-6">
+                         <div class="single-footer-caption mb-50">
+                             <div class="footer-tittle">
+                                 <h4>Navigation</h4>
+                                 <ul>
+                                     <li><a href="#">Home</a></li>
+                                     <li><a href="#">Events</a></li>
+                                     <li><a href="#">Testimonial</a></li>
+                                     <li><a href="#">Categories</a></li>
+                                     <li><a href="#">Contacts</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <div class="col-xl-2 col-lg-2 col-md-5 col-sm-6">
+                         <div class="single-footer-caption mb-50">
+                             <div class="footer-tittle">
+                                 <h4>Useful Links</h4>
+                                 <ul>
+                                     <li><a href="#">Registration</a></li>
+                                     <li><a href="#">Login</a></li>
+                                     <li><a href="#">Policy</a></li>
+                                     <li><a href="#">Terms & Conditions</a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                     <!-- Instagram -->
+                     <div class="col-xl-4 col-lg-4 col-md-5 col-sm-7">
+                         <div class="single-footer-caption mb-50">
+                             <div class="footer-tittle">
+                                 <h4>Instagram Feed</h4>
+                             </div>
+                             <div class="instagram-gellay">
+                                 <ul class="insta-feed">
+                                     <li><a href="#"><img src="media/img/gallery/instagram1.png" alt=""></a></li>
+                                     <li><a href="#"><img src="media/img/gallery/instagram2.png" alt=""></a></li>
+                                     <li><a href="#"><img src="media/img/gallery/instagram3.png" alt=""></a></li>
+                                     <li><a href="#"><img src="media/img/gallery/instagram4.png" alt=""></a></li>
+                                     <li><a href="#"><img src="media/img/gallery/instagram5.png" alt=""></a></li>
+                                     <li><a href="#"><img src="media/img/gallery/instagram6.png" alt=""></a></li>
+                                 </ul>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+
+
+             <div class="footer-bottom">
+                 <div class="row d-flex justify-content-between align-items-center">
+                     <div class="col-xl-9 col-lg-8">
+                       <div class="footer-copy-right">
+                            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-4">
+                         <!-- Footer Social -->
+                         <div class="footer-social f-right">
+                             <span>Follow Us</span>
+                             <a href="#"><i class="fab fa-twitter"></i></a>
+                             <a href="https://www.facebook.com/sai4ull"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#"><i class="fas fa-globe"></i></a>
+                             <a href="#"><i class="fab fa-instagram"></i></a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <!-- Footer End-->
+ </footer>
+ <!-- Scroll Up -->
+ <div id="back-top" >
+     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
+ </div>
+     <!-- JS here -->
+
+     <script src="{% static 'john/js/vendor/modernizr-3.5.0.min.js' %}"></script>
+     <!-- Jquery, Popper, Bootstrap -->
+     <script src="{% static 'john/js/vendor/jquery-1.12.4.min.js' %}"></script>
+     <script src="{% static 'john/js/popper.min.js' %}"></script>
+      <script src="{% static 'john/js/john.js' %}"> </script>
+     <script src="{% static 'john/js/bootstrap.min.js' %}"></script>
+     <!-- Jquery Mobile Menu -->
+     <script src="{% static 'john/js/jquery.slicknav.min.js' %}"></script>
+
+     <!-- Jquery Slick , Owl-Carousel Plugins -->
+     <script src="{% static 'john/js/owl.carousel.min.js' %}"></script>
+     <script src="{% static 'john/js/slick.min.js' %}"></script>
+     <!-- One Page, Animated-HeadLin -->
+     <script src="{% static 'john/js/wow.min.js' %}"></script>
+     <script src="{% static 'john/js/animated.headline.js' %}"></script>
+     <script src="{% static 'john/js/jquery.magnific-popup.js' %}"></script>
+
+     <!-- Nice-select, sticky -->
+     <script src="{% static 'john/js/jquery.nice-select.min.js' %}"></script>
+     <script src="{% static 'john/js/jquery.sticky.js' %}"></script>
+
+     <!-- contact js -->
+     <script src="{% static 'john/js/contact.js' %}"></script>
+     <script src="{% static 'john/js/jquery.form.js' %}"></script>
+     <script src="{% static 'john/js/jquery.validate.min.js' %}"></script>
+     <script src="{% static 'john/js/mail-script.js' %}"></script>
+     <script src="{% static 'john/js/jquery.ajaxchimp.min.js' %}"></script>
+
+     <!-- Jquery Plugins, main Jquery -->
+     <script src="{% static 'john/js/plugins.js' %}"></script>
+     <script src="{% static 'john/js/main.js' %}"></script>
+     <script src="{% static 'john/js/resume.js' %}"></script>
+
+ </body>
+ </html>
